@@ -1,0 +1,99 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST API</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        footer {
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            background: #e4e7e97d;
+            align-items: center;
+            justify-content: center;
+        }
+        .coded{
+            margin-top: 1rem;
+        }
+        .heading {
+            margin-bottom: 20px;
+            border: 2px solid;
+            width: 10%;
+            background-color: #e4e7e97d;
+        }
+        h1:hover{
+          background-color: white;
+            font-size: 35;
+        }
+        h2{
+            margin-bottom: 0.5rem;
+        }
+        .work ul {
+            list-style-position: inside;
+        }
+
+        .work li {
+            margin-top: 0.8rem;
+            margin-left: 1em;
+            background-color: aliceblue;
+            width: 30%;
+        }
+        .rest-api{
+         margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <center style="padding:2%;">
+       
+        <div class="rest-api">
+            <h2>Rest Api must support this two things</h2>
+            <p>>>> <strong>Endpoints</strong> must be same</p>
+            <p>>>> It Should Supports All <strong>HTTP Methods</strong><br>GET<br>POST<br>PUT<br>PATCH<br>DELETE</p>
+        </div>
+        <h1 class="heading"><a href="/api/jokes">Use Api</a></h1>
+        <div class="box">
+            <h2>How to work with this Api</h2>
+            <ul class="work">
+                <h3>ex: {title:joke1} <a>localhost:3000/api/jokes/joke1</a>
+                </h3>
+                <li class="work"><span><strong>GET: </strong></span><a href="/api/jokes/title">localhost:3000/api/jokes/title</a>
+                </li>
+                <li class="work"><span><strong>POST: </strong></span><a href="/api/jokes">localhost:3000/api/jokes</a>
+                </li>
+                <li class="work"><span><strong>PUT: </strong></span><a href="/api/jokes/title">localhost:3000/api/jokes/title</a>
+                </li>
+                <li class="work"><span><strong>PATCH: </strong></span><a href="/api/jokes/title">localhost:3000/api/jokes/title</a>
+                </li>
+                <li class="work"><span><strong>DELETE: </strong></span><a href="/api/jokes">localhost:3000/api/jokes/title</a>
+                </li>
+            </ul>
+        </div>
+        <h1 class="coded">Coded By  <span class="auto-type"></span></h1>
+    </center>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+    var typed = new Typed(".auto-type",{
+        strings:['Nemi'],
+        typeSpeed:120,
+        backSpeed:100,
+        loop:true
+    })
+</script>
+</body>
+<footer>
+    &copy; Nemi's💖Project
+</footer>
+
+</html>
